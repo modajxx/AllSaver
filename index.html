@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AllSaver Privacy Policy — we do not collect, store, or share personal data." />
+  <title>Privacy Policy — AllSaver</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237C3AED'/%3E%3Cstop offset='1' stop-color='%23EC4899'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Cpath d='M50 22v36M34 46l16 14 16-14M30 70h40' stroke='white' stroke-width='8' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E" />
+  <style>
+    *,*::before,*::after { box-sizing: border-box; }
+    :root {
+      --primary: #7C3AED;
+      --accent:  #EC4899;
+      --bg:      #0B0B14;
+      --surface: #15151F;
+      --text:    #F5F5F7;
+      --muted:   #9CA3AF;
+      --border:  #27272A;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.65;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #FFFFFF;
+        --surface: #F9FAFB;
+        --text: #0F172A;
+        --muted: #4B5563;
+        --border: #E5E7EB;
+      }
+    }
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      padding: 60px 24px 80px;
+      text-align: center;
+      color: white;
+    }
+    .logo {
+      width: 80px;
+      height: 80px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.15);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      backdrop-filter: blur(10px);
+    }
+    .logo svg { width: 48px; height: 48px; fill: white; }
+    header h1 {
+      margin: 0 0 8px;
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    header p {
+      margin: 0;
+      opacity: 0.9;
+      font-size: 15px;
+    }
+    main {
+      max-width: 760px;
+      margin: -50px auto 0;
+      padding: 0 16px 80px;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 32px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    }
+    .updated {
+      display: inline-block;
+      background: rgba(124, 58, 237, 0.12);
+      color: var(--primary);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+    h2 {
+      font-size: 22px;
+      font-weight: 700;
+      margin: 32px 0 12px;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h2 .emoji { font-size: 24px; }
+    h2:first-of-type { margin-top: 0; }
+    p, li {
+      color: var(--text);
+      opacity: 0.92;
+    }
+    .muted { color: var(--muted); font-size: 14px; }
+    ul {
+      padding-left: 22px;
+      margin: 12px 0;
+    }
+    li { margin-bottom: 8px; }
+    .highlight {
+      background: linear-gradient(135deg, rgba(124,58,237,0.12), rgba(236,72,153,0.12));
+      border: 1px solid rgba(124,58,237,0.25);
+      border-radius: 14px;
+      padding: 18px 20px;
+      margin: 20px 0;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover { text-decoration: underline; }
+    .lang-toggle {
+      display: flex;
+      gap: 8px;
+      margin: 24px 0;
+      flex-wrap: wrap;
+    }
+    .lang-btn {
+      padding: 8px 18px;
+      border-radius: 20px;
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text);
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 14px;
+      transition: all 0.2s;
+    }
+    .lang-btn.active {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+    }
+    .hi { display: none; }
+    .hi.active { display: block; }
+    .en.active { display: block; }
+    .en.hidden { display: none; }
+    footer {
+      text-align: center;
+      padding: 32px 16px;
+      color: var(--muted);
+      font-size: 13px;
+      border-top: 1px solid var(--border);
+      margin-top: 40px;
+    }
+    footer a { color: var(--accent); }
+    @media (max-width: 600px) {
+      header { padding: 40px 20px 70px; }
+      header h1 { font-size: 26px; }
+      .card { padding: 24px 20px; border-radius: 16px; }
+      h2 { font-size: 19px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <path d="M50 18v44M30 46l20 18 20-18M24 78h52" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </svg>
+    </div>
+    <h1>Privacy Policy</h1>
+    <p>AllSaver — Download from any social media</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <span class="updated">Last updated: June 2, 2026</span>
+
+      <div class="lang-toggle">
+        <button class="lang-btn active" onclick="setLang('en')">English</button>
+        <button class="lang-btn" onclick="setLang('hi')">हिंदी</button>
+      </div>
+
+      <!-- ENGLISH -->
+      <div class="en active">
+        <h2><span class="emoji">🛡️</span> Our Promise</h2>
+        <p>AllSaver is built with privacy at its core. We <strong>do not collect, store, or sell any personal data</strong>. There are no accounts, no logins, no tracking, no analytics SDKs.</p>
+
+        <div class="highlight">
+          <strong>Short version:</strong> Whatever you download stays on your device. We never see your links, your media, or your activity.
+        </div>
+
+        <h2><span class="emoji">📊</span> Data We Collect</h2>
+        <p><strong>None.</strong> AllSaver has no servers, no database, no user accounts. We do not collect:</p>
+        <ul>
+          <li>Personal information (name, email, phone)</li>
+          <li>Device identifiers (IMEI, advertising ID)</li>
+          <li>Location data</li>
+          <li>Contacts, photos, or files outside the app</li>
+          <li>Usage analytics or crash reports</li>
+          <li>The links you paste or the media you download</li>
+        </ul>
+
+        <h2><span class="emoji">🔓</span> Permissions We Use</h2>
+        <p>AllSaver requests the following Android permissions strictly for app functionality:</p>
+        <ul>
+          <li><strong>Internet</strong> — to fetch media from public social media URLs you provide</li>
+          <li><strong>Storage / Media access</strong> — to save downloaded files to your device gallery</li>
+          <li><strong>Notifications</strong> — to show download progress</li>
+          <li><strong>Foreground service</strong> — to keep downloads running when the app is in the background</li>
+        </ul>
+        <p class="muted">None of these permissions are used to collect or transmit personal data.</p>
+
+        <h2><span class="emoji">🌐</span> Third-Party Services</h2>
+        <p>To extract media from social media links, AllSaver may use the open-source <a href="https://github.com/imputnet/cobalt" target="_blank" rel="noopener">Cobalt</a> extraction service. Cobalt is a privacy-respecting, MIT-licensed project that does not require login or store user data.</p>
+        <p>For some platforms, AllSaver may also directly call public APIs (such as Twitter/X's public syndication API). These calls contain only the URL you provided — no personal information.</p>
+
+        <h2><span class="emoji">📲</span> Data Stored on Your Device</h2>
+        <p>The following is stored locally on your device and never transmitted:</p>
+        <ul>
+          <li>Downloaded media files (in your gallery)</li>
+          <li>Download history (in app's local database)</li>
+          <li>Your settings (language, theme, default quality)</li>
+          <li>Private vault PIN (encrypted, never leaves device)</li>
+        </ul>
+        <p>You can clear this data anytime by uninstalling the app or clearing app storage from your phone's Settings.</p>
+
+        <h2><span class="emoji">👶</span> Children's Privacy</h2>
+        <p>AllSaver is intended for users aged 13 and above. We do not knowingly collect any data from children under 13.</p>
+
+        <h2><span class="emoji">⚖️</span> Your Responsibility</h2>
+        <p>AllSaver is a tool. You are responsible for the content you download. Please respect copyright laws, platform terms of service, and the rights of content creators. Do not use AllSaver to download content you do not have permission to save.</p>
+
+        <h2><span class="emoji">🔄</span> Policy Updates</h2>
+        <p>If we ever change this Privacy Policy, the updated version will be published on this page with a new "Last updated" date. Continued use of AllSaver after changes means you accept the updated policy.</p>
+
+        <h2><span class="emoji">📧</span> Contact Us</h2>
+        <p>Questions, concerns, or feedback? Reach us at:</p>
+        <p><a href="mailto:support@allsaver.app">support@allsaver.app</a></p>
+        <p class="muted">We reply within 24 hours.</p>
+      </div>
+
+      <!-- HINDI -->
+      <div class="hi">
+        <h2><span class="emoji">🛡️</span> हमारा वादा</h2>
+        <p>AllSaver की नींव privacy पर रखी गई है। हम <strong>आपका कोई भी personal data ना collect करते हैं, ना store करते हैं, ना sell करते हैं</strong>। ना कोई account चाहिए, ना login, ना tracking, ना analytics।</p>
+
+        <div class="highlight">
+          <strong>छोटा जवाब:</strong> आप जो भी download करते हैं वो आपके phone में ही रहता है। हमें आपके links, media, या activity का कुछ पता नहीं चलता।
+        </div>
+
+        <h2><span class="emoji">📊</span> हम कौन-सा data collect करते हैं</h2>
+        <p><strong>कोई नहीं।</strong> AllSaver का कोई server, database, या user account नहीं है। हम ये कुछ भी collect नहीं करते:</p>
+        <ul>
+          <li>Personal जानकारी (नाम, email, phone)</li>
+          <li>Device IDs (IMEI, advertising ID)</li>
+          <li>Location</li>
+          <li>Contacts, photos या app के बाहर की files</li>
+          <li>Usage analytics या crash reports</li>
+          <li>आपके paste किए हुए links या download किया गया media</li>
+        </ul>
+
+        <h2><span class="emoji">🔓</span> कौन-सी permissions लेते हैं</h2>
+        <p>AllSaver को सिर्फ काम करने के लिए ये Android permissions चाहिए:</p>
+        <ul>
+          <li><strong>Internet</strong> — आपके दिए गए public social media URL से media लाने के लिए</li>
+          <li><strong>Storage / Media</strong> — download की हुई files gallery में save करने के लिए</li>
+          <li><strong>Notifications</strong> — download progress दिखाने के लिए</li>
+          <li><strong>Foreground service</strong> — app background में जाने पर भी download चलाने के लिए</li>
+        </ul>
+        <p class="muted">इन permissions का उपयोग personal data इकट्ठा करने में नहीं होता।</p>
+
+        <h2><span class="emoji">🌐</span> Third-party services</h2>
+        <p>Social media links से media निकालने के लिए AllSaver open-source <a href="https://github.com/imputnet/cobalt" target="_blank" rel="noopener">Cobalt</a> service का उपयोग कर सकता है। Cobalt एक privacy-friendly, MIT-licensed project है — ना login मांगता है, ना user data रखता है।</p>
+        <p>कुछ platforms के लिए AllSaver सीधे public APIs को call करता है (जैसे X / Twitter का public syndication API)। इन calls में सिर्फ आपका दिया URL जाता है — कोई personal जानकारी नहीं।</p>
+
+        <h2><span class="emoji">📲</span> आपके phone में क्या save होता है</h2>
+        <p>ये सब आपके device में locally save होता है और कभी भी transmit नहीं होता:</p>
+        <ul>
+          <li>Download की हुई media files (आपकी gallery में)</li>
+          <li>Download history (app के local database में)</li>
+          <li>आपकी settings (language, theme, quality)</li>
+          <li>Private vault का PIN (encrypted, device कभी नहीं छोड़ता)</li>
+        </ul>
+        <p>App uninstall कर दीजिए या phone की Settings से app storage clear कर दीजिए — सब data हट जाता है।</p>
+
+        <h2><span class="emoji">👶</span> बच्चों की privacy</h2>
+        <p>AllSaver 13 साल या उससे ऊपर के users के लिए है। हम जानबूझकर 13 साल से कम उम्र के बच्चों का कोई data नहीं लेते।</p>
+
+        <h2><span class="emoji">⚖️</span> आपकी जिम्मेदारी</h2>
+        <p>AllSaver सिर्फ एक tool है। आप जो content download करते हैं उसकी जिम्मेदारी आपकी है। Copyright का सम्मान करें, platforms के terms मानें, और creators के हक का ध्यान रखें। ऐसा content download ना करें जिसकी आपको अनुमति नहीं है।</p>
+
+        <h2><span class="emoji">🔄</span> Policy update</h2>
+        <p>अगर हम कभी इस Privacy Policy को बदलते हैं, तो नया version इसी page पर update हो जाएगा और तारीख ऊपर बदल जाएगी। बदलाव के बाद app इस्तेमाल करने का मतलब है कि आप नई policy को मानते हैं।</p>
+
+        <h2><span class="emoji">📧</span> हमसे संपर्क करें</h2>
+        <p>कोई सवाल, परेशानी, या suggestion है?</p>
+        <p><a href="mailto:support@allsaver.app">support@allsaver.app</a></p>
+        <p class="muted">हम 24 घंटे में reply करते हैं।</p>
+      </div>
+    </div>
+
+    <footer>
+      © 2026 AllSaver. All rights reserved.<br/>
+      <a href="mailto:support@allsaver.app">support@allsaver.app</a>
+    </footer>
+  </main>
+
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+      event.target.classList.add('active');
+      const en = document.querySelector('.en');
+      const hi = document.querySelector('.hi');
+      if (lang === 'hi') {
+        en.classList.remove('active');
+        hi.classList.add('active');
+      } else {
+        hi.classList.remove('active');
+        en.classList.add('active');
+      }
+    }
+  </script>
+</body>
+</html>
